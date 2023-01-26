@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* the above property : will include paddings and borders into the width
+
+or the height that we specify for an element.
+
+if we specify the width to 100 pixels,
+
+it will always be 100 pixels,
+
+no matter how much the padding
+
+*/
+}
+
+body {
+    background-color: green;
+    font-family: Arial;
+    font-size: 40px;
+    padding: 50px;
+    /* 
+
+    padding : is space between the content and the border of the page
+     font family property
+
+    is a property that gets inherited.
+    So all the Child Elements of the body element,
+
+will automatically get this font family assigned to them.
+    
+
+most properties do actually not inherit.
+But generally, all the properties
+
+that are related to fonts will inherit.
+
+
+
+not all the elements
+
+have a font size of 20 pixels now.
+
+And that's because the elements like this h1,
+
+and this h2 have predefined font sizes
+
+that automatically are applied from the browser,
+
+if we do not specify them on our own.
+
+But of course we can overwrite them
+
+with our own selectors.
+    
+    */
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.first {
+    color: red;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+/* adding style to a particular class*/
+
+/* adding style to a particular id*/
+#your-name {
+    background-color: aqua;
+    font-size: 20px;
+    border: 5px solid rgb(78, 59, 59);
+    padding: 25px;
+    margin-top: 30px;
+}
+
+input,
+button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+a {
+    background-color: yellowgreen;
+}
+
+/* input and button are inline elements. : both dont create
+ a box that occupy the whole line 
+*/
+
+/* borders are not inherited */
+
+#your-name h2 {
+    color: olivedrab;
+}
+
+img {
+    width: 300px;
+    /* height: 300px; */
+}
