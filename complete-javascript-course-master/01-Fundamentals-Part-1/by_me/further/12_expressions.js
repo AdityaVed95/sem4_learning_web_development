@@ -53,5 +53,5 @@ console.log(`My age is ${age} and ${if(23>10)
     {
         console.log("23 is big");
     }}`);
-
+// the if block is a statement and thus statements are not allowed in the console.log();
     
