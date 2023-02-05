@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        td {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    Student Marks here..
+
+    <table style="width:100%">
+        <tr>
+            <th>Student ID</th>
+            <th>Firstname</th>
+            <th>Semester</th>
+            <th>Subject</th>
+            <th>Exam Month</th>
+            <th>Exam Year</th>
+            <th>Paper Total Marks</th>
+            <th>Marks Obtained</th>
+        </tr>
+
+        {% for item in data %}
+        <tr>
+            {% for element in item %}
+            <td>
+                {{element}}
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+
+</body>
+
+</html>

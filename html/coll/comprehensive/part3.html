@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--table with a cell spanning multiple columns and column spanning multiple rows-->
+
+<html>
+
+<head>
+    <title>This is title</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="width: 100%;">
+        <caption>Telephone Directory1</caption>
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Telephone Number</th>
+        </tr>
+        <tr>
+            <td>Aditya Ved</td>
+            <td>12345</td>
+            <td>67890</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <table style="width: 100%;">
+        <caption>Telephone Directory2</caption>
+        <tr>
+            <th>Name</th>
+            <th>Telephone Number</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2"> Aditya Ved</td>
+            <td>12345</td>
+        </tr>
+
+        <tr>
+            <td>67890</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
