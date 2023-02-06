@@ -1,27 +1,49 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, Response
 from fastapi.staticfiles import StaticFiles
 import uvicorn
 from py_data_access import get_marks_from_db
 from fastapi.templating import Jinja2Templates
+from starlette.middleware import Middleware
+from starlette.middleware.cors import CORSMiddleware
+
+import json
 
 templates = Jinja2Templates(directory="template")
 
 
-app = FastAPI()
+app = FastAPI(
+    middleware=[
+        Middleware(CORSMiddleware, allow_origins=["*"])
+    ]
+)
+app.add_middleware(CORSMiddleware,
+                   allow_origins=["*"],
+                   allow_credentials=True,
+                   allow_methods=["*"],
+                   allow_headers=["*"]
+
+                   )
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
-@app.get("/student_marks")
+@ app.get("/student_marks")
 def get_student_marks(request: Request):
     data = get_marks_from_db()
     return templates.TemplateResponse("student_marks_template.html", {"request": request,  "data": data})
 
 
-@app.get("/student_marks_table")
-def get_student_marks(request: Request):
+@ app.get("/student_marks_table")
+def get_student_marks_table(request: Request):
     data = get_marks_from_db()
     return templates.TemplateResponse("student_marks_table_template.html", {"request": request,  "data": data})
+
+
+@ app.get("/student_marks_json")
+def get_student_marks_as_json():
+    data = get_marks_from_db()
+    json_data = json.dumps(data)
+    return Response(content=json_data, media_type="application/json")
 
 
 if __name__ == '__main__':
