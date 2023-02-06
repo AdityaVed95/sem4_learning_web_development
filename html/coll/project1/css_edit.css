@@ -45,3 +45,7 @@ button {
 input[type="checkbox"] {
     display: inline;
 }
+
+.btn {
+    color: olivedrab;
+}
