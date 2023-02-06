@@ -1,3 +1,6 @@
+# this file contains the program used to get the data
+# from the postgresql database
+
 import psycopg2
 
 
@@ -14,6 +17,7 @@ def get_marks_from_db():
     print(cur)
 
     cur.execute("select * from exam_marks")
+    # this fetches not one but all the entries in the relational data base model
     data = cur.fetchall()
     print(type(data))
     print(data)

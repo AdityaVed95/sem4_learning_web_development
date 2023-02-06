@@ -48,4 +48,13 @@ input[type="checkbox"] {
 
 .btn {
     color: olivedrab;
+    text-align: center;
+}
+
+.heading_looks {
+
+    color: beige;
+    text-align: center;
+    font-size: 30px;
+
 }
