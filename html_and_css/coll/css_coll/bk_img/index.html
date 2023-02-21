@@ -1,0 +1,36 @@
+<!-- just observe the body inside style tag for 
+    all html files after this file
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="my_style.css">
+
+    <style>
+        .specially_for_this_file_whoever_selects_me {
+            color: crimson;
+            border-style: double;
+        }
+
+        body {
+            background-image: url("img_beauty.jpg");
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="for_everyone_who_selects_me">Applying effect from External CSS</h1>
+    <h1 class="specially_for_this_file_whoever_selects_me">Applying effect from Internal CSS</h1>
+    <h1 style="color: aqua; border-style: outset;">Applying effect from Inline CSS</h1>
+
+
+</body>
+
+</html>

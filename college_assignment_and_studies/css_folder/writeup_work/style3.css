@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: black;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.btn {
+    border-radius: 0;
+    width: 100%;
+    text-align: left;
+    padding: 10px 16px;
+}
+
+.btn-primary {
+    background-color: blue;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: darkblue;
+}
+
+.btn-success {
+    background-color: green;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: darkgreen;
+}
+
+.btn-danger {
+    background-color: red;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: darkred;
+}
+
+.btn-info {
+    background-color: lightblue;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: blue;
+}

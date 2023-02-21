@@ -1,0 +1,80 @@
+/* Main container style */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Navigation style */
+nav {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+}
+
+nav .navbar-header a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li.active a {
+    text-decoration: underline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Button styles */
+button {
+    display: block;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 20px;
+    text-align: left;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+}
+
+hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}

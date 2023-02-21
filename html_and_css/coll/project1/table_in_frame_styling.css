@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(221, 124, 140)
+}
+
+.my_table {
+    text-align: center;
+    color: purple;
+    border: 1px solid black;
+
+
+}
+
+
+td {
+    border: 1px solid black;
+}
+
+.my_looks {
+    text-align: center;
+    color: pink;
+}
+
+.btn {
+    width: 200px;
+    height: 75px;
+}
